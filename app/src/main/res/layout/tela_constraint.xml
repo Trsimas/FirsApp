@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/tvTelefone"
@@ -29,28 +28,28 @@
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/edtTel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="Digite seu telefone: "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvEmail"
-        android:autofillHints=""
-        tools:ignore="HardcodedText,LabelFor" />
-
-    <EditText
         android:id="@+id/edtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Digite seu E-mail: "
+        android:text="@string/telefone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtTel"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
         android:autofillHints=""
-        tools:ignore="HardcodedText,LabelFor" />
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/edtTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/btnEnviar"
@@ -59,6 +58,5 @@
         android:text="@string/enviar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtEmail"/>
-
+        app:layout_constraintTop_toBottomOf="@id/edtTel"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

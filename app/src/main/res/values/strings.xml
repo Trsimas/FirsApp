@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">firt project</string>
+    <string name="email">Digite seu Email: </string>
+    <string name="nome">Digite seu nome: </string>
+    <string name="idade">Digite sua idade: </string>
+    <string name="enviar">Enviar </string>
+    <string name="telefone">Digite seu telefone: </string>
+    <string name="anoNascimento">Digite o ano em que nasceu: </string>
 </resources>
