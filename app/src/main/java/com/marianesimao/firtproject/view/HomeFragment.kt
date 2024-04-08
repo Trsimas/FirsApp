@@ -24,10 +24,10 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.BtnCalculo.setOnClickListener {
+        binding.btnCalculo.setOnClickListener {
             findNavController().navigate(R.id.calculoFragment)
         }
-        binding.BtnVerifica.setOnClickListener {
+        binding.btnVerifica.setOnClickListener {
             findNavController().navigate(R.id.verificaFragment)
         }
     }
